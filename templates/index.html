@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <script src="{{ url_for('static', filename='js/myscripts.js')}}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Content -->
+    <div id="main">
+        <button class="openbtn" onclick="openNav()" style="left: -5px; position: absolute;">&#9776; Sidebar</button>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/profile">About</a>
+        <a href="/work">Works</a>
+        <a href="/contact">Contact</a>
+    </div>
+    <!-- Centered welcome heading -->
+    <div class="welcome-heading">
+        <h1>Welcome to Derick's Website</h1>
+    </div>
+
+    <!-- Flex container for the content -->
+    <div class="flex-container">
+        <div>
+            <h1>Welcome to Derick's works</h1>
+            <ul>
+                <li><a href="/touppercase">toUpperCase</a></li>
+                <li><a href="/areaofcircle">Area of a Circle</a></li>
+                <li><a href="/areaoftriangle">Area of a Triangle</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
