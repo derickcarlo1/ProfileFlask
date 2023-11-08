@@ -1,0 +1,120 @@
+/* The sidebar menu */
+.sidebar {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    left: 0;
+    top: 0;
+    width: 0; /* 0 width - change this with JavaScript */
+    height: 100%; /* 100% Full-height */
+    background-color: #FFB6C1; /* Change the background color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: width 0.5s ease; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 8px 8px 32px;
+    font-size: 24px; /* Change the font size */
+    color: #2E8B57; /* Change link color */
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #FF1493; /* Change hover color */
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    cursor: pointer;
+    background-color: #0000CD; /* Change button background color */
+    color: white;
+    font-size: 22px; /* Change the font size */
+    padding: 12px 16px; /* Adjust padding */
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #1E90FF; /* Change hover background color */
+}
+
+/* Style page content */
+#main {
+    transition: margin-left .5s ease;
+    margin-left: 0;
+    padding: 20px;
+}
+
+/* On smaller screens, adjust the style of the sidenav */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/* Horizontal list styles */
+.horizontal-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-list li {
+    display: inline;
+    margin-right: 15px; /* Adjust the spacing between list items */
+}
+
+.horizontal-list li:last-child {
+    margin-right: 0;
+}
+
+/* Body and heading styles */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Change text color */
+}
+
+/* Center the welcome heading */
+.welcome-heading {
+    margin-top: 30px; /* Adjust the margin-top value */
+    text-align: center;
+}
+
+/* Flex container for the content */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Adjust margin-top for spacing */
+}
+
+/* Left div (pushed to the left) */
+.flex-container > div:first-child {
+    position: absolute;
+    right: 40%;
+    margin-right: auto;
+}
+
+/* Right div (pushed to the right) */
+.flex-container > div:last-child {
+    position: absolute;
+    left: 45%;
+    margin-left: auto;
+}
+
+/* Style for the div elements */
+.flex-container > div {
+    border-radius: 15px; /* Increase border-radius */
+    padding: 20px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2); /* Adjust box shadow */
+}
